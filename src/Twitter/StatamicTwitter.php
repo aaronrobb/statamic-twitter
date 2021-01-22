@@ -90,7 +90,6 @@ class StatamicTwitter
                 'text'  => $this->makeLinksOfUrlsIn($data->text),
                 'date'  => Carbon::create($data->created_at),
                 'media' => $media
-               // 'image' => $image
             ];
         });
     }

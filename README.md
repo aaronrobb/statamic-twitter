@@ -1,7 +1,11 @@
-# statamic-twitter
+# Statamic Twitter
+Display your twitter feed on your website using api v1.1. Currently there will be an issue if 
+you fully cache your site. But we will add an option to fetch the feed with JavaScript soon.
 
 
 ## Twitter Credentials
+Within your Twitter account you can create an app and generate these details.
+
 ## Available .ENV settings
 
 | Name                         | Default Value | Required |
@@ -13,6 +17,12 @@
 | TWITTER_EXPIRATION           | 86400         | No       |
 
 ## Antlers Tag
+```
+{{ statamic_twitter cache="3600" count="6"}}
+    {{ date format="Y-m-d" }}
+    {{ text }}
+{{ /statamic_twitter }}
+```
 
 ### Available Fields
 | Name                         | Default Value | Required |
@@ -21,12 +31,7 @@
 | count                        | 3             | No       |
 
 ### Recipes
-```
-{{ statamic_twitter cache="3600" count="6"}}
-    {{ date format="Y-m-d" }}
-    {{ text }}
-{{ /statamic_twitter }}
-```
+
 
 ```
 <section class="my-16 bg-gray-50 p-24">

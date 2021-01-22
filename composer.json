@@ -1,7 +1,7 @@
 {
     "name": "pixney/statamic-twitter",
     "description": "Twitter",
-    "license": "proprietary",
+    "license": "MIT",
     "keywords": [
         "Statamic",
         "Social Media",
