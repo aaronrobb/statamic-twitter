@@ -1,0 +1,43 @@
+{
+    "name": "pixney/statamic-twitter",
+    "description": "Twitter",
+    "license": "proprietary",
+    "keywords": [
+        "Statamic",
+        "Social Media",
+        "Twitter",
+        "AlpineJS",
+        "JavaScript"
+    ],
+    "authors": [
+        {
+            "name": "William Åström",
+            "email": "hello@pixney.com",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "email": "hello@pixney.com"
+    },
+    "require": {
+        "abraham/twitteroauth": "^2.0",
+        "php": "^7.4",
+        "statamic/cms": "^3.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Pixney\\StatamicTwitter\\": "src"
+        }
+    },
+    "extra": {
+        "statamic": {
+            "name": "Statamic Twitter",
+            "description": "Statamic Twitter addon"
+        },
+        "laravel": {
+            "providers": [
+                "Pixney\\StatamicTwitter\\ServiceProvider"
+            ]
+        }
+    }
+}
