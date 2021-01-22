@@ -24,7 +24,7 @@ Within your Twitter account you can create an app and generate these details.
 {{ /statamic_twitter }}
 ```
 
-### Available Fields
+### Available Parameters
 | Name                         | Default Value | Required |
 |------------------------------|---------------|----------|
 | cache                        | 86400         | No       |
